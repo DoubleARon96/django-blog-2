@@ -41,14 +41,15 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
+    updated_on = models.DateTimeField(auto_now=True)
 
-class Country(models.Model):
+#class Country(models.Model):
     # …
-    capital_city = models.OneToOneField(
-        CapitalCity,
-        on_delete=models.CASCADE,
-        related_name="capital_of"
-    )
+    #capital_city = models.OneToOneField(
+    #    CapitalCity,
+    #    on_delete=models.CASCADE,
+    #    related_name="capital_of"
+    #)
     # …
 
 class Ticket(models.Model):
