@@ -65,7 +65,7 @@ class Comment(models.Model):
     # Created timestamp (auto-populated when a comment is added)
     created_on = models.DateTimeField(auto_now_add=True)
 
-    challenge = models.SlugField()
+    challenge = models.CharField(max_length=100, default='')
 
     class Meta:
         ordering = ["created_on"]
