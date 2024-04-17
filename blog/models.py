@@ -28,8 +28,7 @@ class Ticket(models.Model):
 
 
     def __str__(self):
-        return f"Ticket for {self.ticket_holder}"
-    
+        return f"Ticket for {self.ticket_holder}"   
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
