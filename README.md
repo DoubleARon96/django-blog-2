@@ -40,5 +40,11 @@ Happy coding!
 
 ## About Me
 
+# Making New App
+
+python3 manage.py startapp (Name Here)
+
 # Plan
 ![plan out image](static/images/django_3_06a_01_app.png)
+
+#
