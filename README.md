@@ -37,3 +37,8 @@ You can now use the `heroku` CLI program - try running `heroku apps` to confirm 
 ---
 
 Happy coding!
+
+## About Me
+
+# Plan
+![plan out image](static/images/django_3_06a_01_app.png)
