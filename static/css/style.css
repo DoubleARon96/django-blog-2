@@ -71,6 +71,9 @@ body {
     color: white;
     position: relative;
 }
+.userimage {
+    width: 75%;
+}
 
 .masthead-image {
     position: relative;

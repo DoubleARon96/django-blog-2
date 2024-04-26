@@ -31,6 +31,10 @@ class Ticket(models.Model):
     def __str__(self):
         return f"Ticket for {self.ticket_holder}"   
 
+    """
+    Stores a single blog post entry related to :model:`auth.User`.
+    """
+
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
@@ -49,6 +53,11 @@ class Post(models.Model):
 
     def __str__(self):
         return f"{self.title} | written by {self.author}"
+    
+    """
+    Stores a single comment entry related to :model:`auth.User`
+    and :model:`blog.Post`.
+    """
 
 class Comment(models.Model):
     # Relationship with the Post model (many-to-one)
